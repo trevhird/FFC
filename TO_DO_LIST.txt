@@ -14,11 +14,10 @@ Mark:
 
 Fix the javascript for the contact form.
 
-Add a footer to the bottom.
-include social media buttons.
-twolions
+Add a footer to the bottom. - Done
+include social media buttons. - Needs to be done
+twolions - Done
 
-Ico in url bar
 
 BOTH:
 

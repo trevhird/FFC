@@ -422,3 +422,23 @@ FLoating labels
     top: 20px;
   }
 }
+
+
+footer {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    
+    margin-bottom: 5px;
+
+
+  }
+
+  footer p, img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+
