@@ -29,4 +29,8 @@ Jan 8th 2016.
 
 Jan 16th Have something decent for him to take look at.
 
+NEW BUSINESS:
 
+The FFC logo has shifted since the addition of the footer.  Investigate:
+
+If the background of these new pictures are white then the font colour is going to have to be different.

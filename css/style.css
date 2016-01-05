@@ -25,9 +25,9 @@ a {
   text-decoration: none;
 }
 */
+
+
 CUSTOM STYLE
-
-
 
 /* -------------------------------- 
 
@@ -388,7 +388,7 @@ Custom icons
 
 /* -------------------------------- 
 
-FLoating labels 
+Floating labels 
 
 -------------------------------- */
 .js .floating-labels div {
@@ -423,22 +423,26 @@ FLoating labels
   }
 }
 
+/* ---------------------------
+
+!!!>>>>>><<<<<<!!! Addition of footer !!!>>>>>><<<<<<!!!
+
+--------------------------- */ 
 
 footer {
     height: 50px;
     width: 100%;
     text-align: center;
-    
     margin-bottom: 5px;
 
 
   }
 
-  footer p, img {
-    display: inline-block;
-    vertical-align: middle;
-    padding-top: 10px;
-    font-size: 12px;
+footer p, img {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 10px;
+  font-size: 12px;
   }
 
 
