@@ -52,7 +52,6 @@ Form
   margin: 4em auto;
 }
 
-}
 .cd-form::after {
   clear: both;
   content: "";
@@ -430,15 +429,12 @@ Floating labels
 --------------------------- */ 
 
 footer {
-    height: 50px;
+    position: absolute;
+    height: 25%;
     width: 100%;
     text-align: center;
-    margin-bottom: 5px;
-
-
-  }
-
-footer p, img {
+    }
+footer p, #twolionslogo {
   display: inline-block;
   vertical-align: middle;
   padding-top: 10px;
