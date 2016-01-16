@@ -52,84 +52,35 @@
 	        });
 	    	</script>
 		
-		<style type="text/css">
-		<style type="text/css">
-.cd-intro-content h1,
-.cd-intro-content p,
-.cd-intro-content .cd-btn {
-  opacity: 0;
-  animation-delay: 0.3s;
-  animation-fill-mode: forwards;
+	<style type="text/css">
+
+.action-wrapper {
+position: relative;
+top:150px;
+text-align: center;
+
 }
- 
-.bouncy.cd-intro-content h1 {
-  animation-name: cd-bounce-right;
+.cd-btn {
+display: inline-block;
+background-color: red;
+color: black;
+margin: 15px;
+padding: 20px 50px;
+-webkit-box-shadow: 0px 5px 12px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 5px 12px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 5px 12px 0px rgba(50, 50, 50, 0.75);
 }
- 
-.bouncy.cd-intro-content p {
-  animation-name: cd-bounce-left;
+.cd-btn:hover {
+background-color: #252525;
+color: white;
 }
- 
-.bouncy.cd-intro-content h1,
-.bouncy.cd-intro-content p {
-  animation-duration: 0.6s;
-}
- 
-.bouncy.cd-intro-content .cd-btn {
-  animation-name: cd-bounce-rotate;
-  animation-duration: 0.5s;
-}
- 
-.bouncy.cd-intro-content .cd-btn.main-action {
-  animation-delay: 0.4s;
-}
- 
-@keyframes cd-bounce-right {
-  0% {
-    opacity: .2;
-    transform: translateX(-200px);
+@media only screen and (max-width: 600px) {
+  .cd-btn{display: block;
+  	}
   }
-  60% {
-    opacity: .7;
-    transform: translateX(15px);
+  #a img{
+  	z-index: +1;
   }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
- 
-@keyframes cd-bounce-left {
-  0% {
-    opacity: .2;
-    transform: translateX(200px);
-  }
-  60% {
-    opacity: .7;
-    transform: translateX(-15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
- 
-@keyframes cd-bounce-rotate {
-  0% {
-    opacity: .2;
-    transform: perspective(800px) rotateX(-80deg);
-  }
-  20% {
-    opacity: 1;
-  }
-  60% {
-    transform: perspective(800px) rotateX(20deg);
-  }
-  100% {
-    opacity: 1;
-    transform: perspective(800px) rotateX(0);
-  }
-}
     </style>		
 	</head>
 
@@ -149,20 +100,22 @@
 		</header>
 
 		<main class="cd-main-content">
-				
-				<div class="cd-fixed-bg cd-bg-1">
+				<!--First Section-->
+				<div class="cd-fixed-bg cd-bg-1">	
 					<div class="cd-intro">
 						<div class="cd-intro-content bouncy">
-		<h1>Fountains of Decadence... and a Whole Lot More!</h1>
-		<p>A collection of text effects for the intro section of your website</p>
-		<div class="action-wrapper">
-			<a href="#0" class="cd-btn main-action">Get started</a>
-			<a href="#0" class="cd-btn">Learn More</a>
+							<h1>Fountains of Decadence... and a Whole Lot More!</h1>
+							<p>A collection of text effects for the intro section of your website</p>
+							<!-- buttons in 1st sections -->
+							<div class="action-wrapper">	
+								<a href="#event_info" class="cd-btn main-action">Contact Us for Availability</a>
+								<a href="#0" class="cd-btn">Take A Peek at Our Products</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				
+				<!--end of First Section-->
+				<!--Second Section-->
 				<div class="cd-scrolling-bg cd-color-2" id="AboutUs">
 					<div class="cd-container">
 						<h2 style="font-weight:bold">About Us</h2>
@@ -202,14 +155,17 @@
 						</p>
 					</div>
 				</div>
-				
+				<!--end of Second Section-->
+				<!--Third Section-->
 				<div class="cd-fixed-bg cd-bg-2" id="Fountains">
 					<div class="cd-intro">
 						<h1>Fountains</h1>
 						<!--Trevor will add an animation of rental and sales icons then add a separate page for both rentals and sales-->
 					</div>
 				</div>
+				<!--end of Third Section-->
 				
+				<!--Fourth Section-->
 				<div class="cd-scrolling-bg cd-color-2">
 					<div class="cd-container">
 						<h3 style="font-weight:bold">What We Do Best</h3>
@@ -217,24 +173,47 @@
 							Whatever the event our fountains will satisfy any customer. 
 							</p>
 							
-							<a href="#" class="box">
-								<h2><span>Rentals</span></h2>
-		  							<h3>Click for More Details</h3>
-							</a>
-							
-							<a href="#" class="box">
-		  						<h2><span>Sales</span></h2>
-		  							<h3>Click for More Details</h3>
-							</a>
+							<div class="accordion">
+							  <ul>
+							    <li>
+							      <div> 
+							      	<a href="#">
+							        <h2>Rentals</h2>
+							        	<p>Learn More about Fountain Rentals</p>
+							        </a> 
+							    	</div>
+							    </li>
+							    
+							    <li>
+							    	<div>
+							      	<a href="#">
+							        <h2>Sales</h2>
+							        	<p>Learn More about Fountain Sales</p>
+							        </a> 
+							    	</div>
+							    </li>
+							    
+							    <li>
+							      <div>
+							      <a href="#">
+							        <h2>Printed Edibles!</h2>
+							        <p>Learn More about </p>
+							        </a>
+							       </div>
+							    </li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				
+				<!--end of Fourth Section-->
+				<!--Fifth Section-->
 				<div class="cd-fixed-bg cd-bg-3" id="ContactUs">
 					<div class="cd-intro">
 						<h1>Contact Us</h1>
 					</div>
 				</div>
-				
+				<!--end of Fifth Section-->
+				<!--Sixth Section-->
 				<section id="event_info">
 					<div class="cd-scrolling-bg cd-color-2">
 						<div class="cd-container">
@@ -332,16 +311,23 @@
 							</div>
 						</div>
 				</section>
+				<!--end of Sixth Section-->
+				<!--Start of Footer-->
 			<footer class="ffc-footer">
-			  
 			   	<div id="twolions-stamp">
 			   		<p>Site Powered By</p>
 						<a href="http://www.twolionstechnologies.com" target="_blank"><img id="twolionslogo" src="img/twolions.png" alt="two lions technologies logo">
 						</a>
 				</div>
-			
+		 	<div id="social-media">
+			  	<a href="#" class="icon-sprite facebook"><img src= "img/iconsprite.svg" alt="icon facebook"></a>
+				<a href="#" class="icon-sprite twitter"><img src="img/iconsprite.svg" alt="icon twitter"></a>
+			</div>
 			</footer>
+			<!--end of Footer-->
 		</main>		
+						
+			<!--Scripts-->
 						<script>
 								jQuery(document).ready(function($){
 									//open-close submenu on mobile
@@ -355,6 +341,6 @@
 								<script src="add_ons/product-quick-view/js/main.js"></script>
 						<!--Begin Contact Form Scripts--> <script src="js/jquery-2.1.1.js"></script>
 						<script src="js/main.js"></script> <!-- Resource jQuery --> <!--Eng Contact form Scripts-->
-
+			<!--end of Scripts-->
 	</body>
 </html>

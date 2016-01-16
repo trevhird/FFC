@@ -434,11 +434,40 @@ footer {
     width: 100%;
     text-align: center;
     }
+/* set the elements of the footer to have its own attributes -- fixed the logo in header */    
 footer p, #twolionslogo {
   display: inline-block;
   vertical-align: middle;
   padding-top: 10px;
   font-size: 12px;
   }
+/*hover effect on social media icons*/
 
-
+/*>>>>>>>Sets the size of element<<<<<<<<*/
+.icon-sprite {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  text-indent: -9000px;
+  }
+/*exposes the actual size of the image*/  
+.icon-sprite img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    
+  }
+  /* drops the position on the img by 20px from the top*/ 
+  .icon-sprite:hover img {
+    top: -20px;
+    }
+  /* where the icon is located on the img */ 
+  .facebook img {
+    left:0; top: 0;
+    }
+  /*because the img are 20px x 20px the next icon would be 20px tot he right*/ 
+  .twitter img {
+    left: -20px; top: 0px;
+    }
