@@ -433,18 +433,15 @@ footer {
     height: 25%;
     width: 100%;
     text-align: center;
-<<<<<<< HEAD
     margin-bottom: 5px
 
 
   }
 
 footer p, img {
-=======
     }
 /* set the elements of the footer to have its own attributes -- fixed the logo in header */    
 footer p, #twolionslogo {
->>>>>>> 5d536a79ff61b19100b418058d9088d7724a4d17
   display: inline-block;
   vertical-align: middle;
   /*padding-top: 10px; */ 
