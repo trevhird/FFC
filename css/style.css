@@ -433,18 +433,17 @@ footer {
     height: 25%;
     width: 100%;
     text-align: center;
-<<<<<<< HEAD
+
     margin-bottom: 5px
 
 
   }
 
 footer p, img {
-=======
+
     }
 /* set the elements of the footer to have its own attributes -- fixed the logo in header */    
 footer p, #twolionslogo {
->>>>>>> 5d536a79ff61b19100b418058d9088d7724a4d17
   display: inline-block;
   vertical-align: middle;
   /*padding-top: 10px; */ 
@@ -455,8 +454,8 @@ footer p, #twolionslogo {
 /*>>>>>>>Sets the size of element<<<<<<<<*/
 .icon-sprite {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   overflow: hidden;
   position: relative;
   text-indent: -9000px;
@@ -464,13 +463,13 @@ footer p, #twolionslogo {
 /*exposes the actual size of the image*/  
 .icon-sprite img {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     
   }
   /* drops the position on the img by 20px from the top*/ 
   .icon-sprite:hover img {
-    top: -20px;
+    top: -35px;
     }
   /* where the icon is located on the img */ 
   .facebook img {
@@ -478,5 +477,5 @@ footer p, #twolionslogo {
     }
   /*because the img are 20px x 20px the next icon would be 20px tot he right*/ 
   .twitter img {
-    left: -20px; top: 0px;
+    left: -35px; top: 0px;
     }
