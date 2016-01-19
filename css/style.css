@@ -435,12 +435,7 @@ footer {
     text-align: center;
 
     margin-bottom: 5px
-
-
-  }
-
-footer p, img {
-
+  
     }
 /* set the elements of the footer to have its own attributes -- fixed the logo in header */    
 footer p, #twolionslogo {
