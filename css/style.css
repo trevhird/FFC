@@ -506,9 +506,10 @@ footer p, #twolionslogo {
 }
 /*overrides footer size from css sheet*/
   footer {
-    height: 30%;
+    height: 26%;
     padding-top: 15px;
-    font-family: 'zebraFont';
+   /* font-family: 'zebraFont';*/
+    font-family: "Roboto", sans-serif;
   }
 
 .action-wrapper {
