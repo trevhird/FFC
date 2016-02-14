@@ -1,0 +1,12 @@
+
+							<a href="#" class="box">
+								<h2><span>Rentals</span></h2>
+		  							<h3>Click for More Details</h3>
+							</a>
+							
+							<a href="#" class="box">
+								
+		  						<h2><span>Sales</span></h2>
+		  							<h3>Click for More Details</h3>
+							<img src="img/rentals.svg" alt="yo" id="a">
+							</a>
