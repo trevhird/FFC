@@ -927,6 +927,9 @@ footer p, #twolionslogo {
   }
 
 
+
+
+
 /*---------Social Media Hover Effects in Foooter-------*/
 
 /*>>>>>>>Sets the size of element<<<<<<<<*/
@@ -960,12 +963,21 @@ footer p, #twolionslogo {
 /*//////////////////////////////////Secondary Footer Two Lions Stamp\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
  
  /*Custom Styles copied in from the head of the index.html page on Feb 2, 2016 ----delete comment upon clean up*/
+  
+table {
+  border-collapse: separate;
+border-spacing: 5px;
+}
+
+#table_bottom_row {
+border-bottom: 1px solid gray;
+
+}
+
   #twolions-stamp {
-    border-top: 1px solid gray;
-    position: absolute;
-    left: 0;
-    right:0;
-    bottom: 0;
+    
+
+text-align: center;
   }
 
 .buttons {
