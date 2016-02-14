@@ -9,11 +9,9 @@ Primary style
   box-sizing: border-box;
 }
 
-/* Conflicts with Nav, so X'd out */
-
-/**::after, *::before {
+*::after, *::before {
   content: '';
-} */
+} 
 
 .cd-header {
   position: fixed;
