@@ -51,7 +51,35 @@
 	            });
 	        });
 	    	</script>
-		
+		<style>
+	.ffc-rental-wrapper{
+		max-width: 100%;
+	}
+	.ffc-item h1,h2,h3{
+		padding:100px;
+	}
+	.ffc-item a {display: none;}	
+
+	.ffc-item img{
+	max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .ffc-item {
+  	display: inline-block;
+  	text-align: center;
+  	width: 30%;
+  }
+  .ffc-item img{
+  	max-width: 100%;
+  	height: auto;
+  }
+    .ffc-item p{display: none;}
+
+.ffc-item a{display:inline-block;}	
+}
+
+		</style>
 		
 	</head>
 
@@ -71,29 +99,24 @@
 		</header>
 
 		<main class="cd-main-content">
-				<!--First Section-->
-				<div class="cd-fixed-bg cd-bg-1">	
-					<div class="cd-intro">
-						<div class="cd-intro-content bouncy">
-							<h1>Fountains of Decadence... and a Whole Lot More!</h1>
-							<!-- buttons in 1st sections -->
-							<div class="action-wrapper">	
-								<a href="#event_info" class="cd-btn main-action">Contact Us for Availability</a>
-								<a href="#Fountains" class="cd-btn">Take A Peek at Our Products</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--end of First Section-->
-				<!--Second Section-->
-				<div class="cd-scrolling-bg cd-color-2" id="AboutUs">
-					<div class="cd-container" >
-						<h2 style="font-weight:bold">About Us</h2>
-						<p>
-							Our service to you includes the utmost care and attention to your requirements — whether it be a chocolate fountain/fondue for rent or to purchase. From home to commercial use, we strive to help you decide which application would best suite your needs.  Our chocolate gifts customized just for you are definitely a special product. They include a wide range of personalized graphic services and the setting up of your designs for memorable events.
-						</p>
+				<h2 style="font-weight:bold">Fountain Selection</h2>
 						
-						
+<!--block images-->
+				<div class="ffc-rental-wrapper">
+				
+
+<div class="ffc-item"><img src="img/smallfountain.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Quick View</a>
+			<p> description jasdlfms;adklnflkdsanlknf</p>
+</div>
+
+<div class="ffc-item"><img src="img/largefountain.jpg" alt="Item Preview">
+	<a href="#0" class="cd-trigger">Quick View</a></div>
+<div class="ffc-item"><img src="img/doublefountain.jpg" alt="Item Preview">
+	<a href="#0" class="cd-trigger">Quick View</a></div>
+
+</div>
+<!--End of Block images-->						
 
 						<h3 style="font-weight:bold">Our Services and Service Area</h3>
 							
@@ -122,8 +145,7 @@
 						<p>
 							Our attendants are available to hire for the duration of your event if you require someone to oversee the fountain and dipping items. In most cases, however, your caterer will oversee the replenishing of the dipping items. Please feel free to inquire if you are needing assistance.
 						</p>
-					</div>
-				</div>
+
 				<!--end of Second Section-->
 				
 
@@ -151,6 +173,7 @@
 				</td>
 			   	<td>
 				<p>Follow Us on</p><br><p> Social Media</p>
+					
 					<div id="social-media">
 
 			  		<a href="https://www.facebook.com/FallingForChocolate/" class="icon-sprite facebook buttons"><img src= "img/iconsprite.svg" alt="icon facebook"></a>
