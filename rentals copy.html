@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/ico/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/rentals_style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	<script src="add_ons/dist/jquery.scroller.js"></script>
+	<title> Falling For Chocolate | Rentals </title>
+<style type="text/css">
+
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	padding-top:0px;
+	padding-bottom: 30px;
+}
+
+#form-div {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e17c77+0,9b2d71+51,3d014b+100 */
+background: #e17c77; /* Old browsers */
+background: -moz-linear-gradient(top,  #e17c77 0%, #9b2d71 51%, #3d014b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #e17c77 0%,#9b2d71 51%,#3d014b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #e17c77 0%,#9b2d71 51%,#3d014b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e17c77', endColorstr='#3d014b',GradientType=0 ); /* IE6-9 */
+
+	/*background-color:#610345;*/
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	margin:0 auto;
+	margin-top:30px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  	font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+hr.style6 {
+	background-color: #fff;
+	border-top: 2px dotted #8c8b8b;
+}
+
+#rental_text{
+	display: block;
+	max-width:100%;
+	text-align: center;}
+#rental_text h2{padding: 20px;}
+#main_animated_section{
+
+	padding-bottom: 80px;
+}
+body{
+background: url(img/purpleBG.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+h2{font-weight: 900;}
+#slimjim{background: white;}
+footer{background-color: white;}
+</style>
+
+</head>
+<body>
+	<header>
+		<header class="cd-header">
+			<div id="cd-logo">
+				<a href="index.html"> <img src="img/FFClogo.svg" alt="logo"> </a>
+			</div>
+			
+			<nav class="cd-main-nav">
+				<ul>
+					<li><a href="#AboutUs">About us</a></li>
+					<li><a href="#Fountains">Fountains</a></li>
+					<li><a href="#ContactUs">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+	</header>
+	<div id="main_animated_section">
+	<ul class="cd-items cd-container">
+		<li class="cd-item">
+			<img src="img/smallfountain.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Quick View</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/largefountain.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Quick View</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/doublefountain.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Quick View</a>
+		</li> <!-- cd-item -->
+
+		
+	</ul> <!-- cd-items -->
+
+	<div class="cd-quick-view">
+		<div class="cd-slider-wrapper">
+			<ul class="cd-slider">
+				<li class="selected"><img src="img/smallfountain.jpg" alt="Product 1"></li>
+				<li><img src="img/largefountain.jpg" alt="Product 2"></li>
+				<li><img src="img/doublefountain.jpg" alt="Product 3"></li>
+			</ul> <!-- cd-slider -->
+
+			<ul class="cd-slider-navigation">
+				<li><a class="cd-next" href="#0">Prev</a></li>
+				<li><a class="cd-prev" href="#0">Next</a></li>
+			</ul> <!-- cd-slider-navigation -->
+		</div> <!-- cd-slider-wrapper -->
+
+		<div class="cd-item-info">
+			<h2>Produt Title</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+			<ul class="cd-item-action">
+				<li><button class="add-to-cart">Add to cart</button></li>					
+				<li><a href="#0">Learn more</a></li>	
+			</ul> <!-- cd-item-action -->
+		</div> <!-- cd-item-info -->
+		<a href="#0" class="cd-close">Close</a>
+	</div> <!-- cd-quick-view -->
+
+	</div><!--main-animated-section-->
+
+
+
+<div id="slimjim">
+
+<div id="rental_text">
+	<hr class="style6">
+
+<h2>Let Us Make It Easy For You</h2>
+		<p>
+		If you are interested in renting one of our fountains, please fill out the form to the left, or complete a contact form on the main page of the website.  UPDATE THIS TEXT
+		</p>
+</div>
+
+<div id="form-main">
+  <div id="form-div">
+    <form class="form" id="form1">
+      
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
+      
+      <p class="text">
+        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+      </p>
+      
+      
+      <div class="submit">
+        <input type="submit" value="SEND" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+  </div>
+</div><!--close the rental_text div-->
+
+<hr class="style6">
+<br>
+
+</div>
+				<!--Start of Footer-->
+				
+			<footer class="ffc-footer">
+			<div id="fixed_footer_wrap">
+			   <table style="width:100%">
+			   <tr id="table_bottom_row">
+			   	<td style="color:blue"> <p>Site Map</p>
+			   		<br><br>
+			   		<p> <a href="#AboutUs">About Us</a></p> <br> 
+			   		<p><a href="#Fountains">Fountains</a></p> <br> 
+			   		<p><a href="#ContactUs">Contact Us</a></p> <br> 
+			   		<p><a href="rentals/rentals.html">Rentals</a></p> <br> 
+			   		<p><a href="">Sales</a></p> <br> 
+			   		<p><a href="">Printed Edibles</a></p> <br> 
+
+			   	</td>
+				<td style="color:black"> <p>Falling For Chocolate</p><br>
+				<p>604.862.6959</p><br>
+				<p>info@fallingforchocolate.com</p><br>
+				<p>Roche Point Dr</p><br>
+				<p>North Vancouver, BC</p>
+
+
+				</td>
+			   	<td>
+				<p>Follow Us on</p><br><p> Social Media</p>
+					<div id="social-media">
+
+			  		<a href="https://www.facebook.com/FallingForChocolate/" class="icon-sprite facebook buttons"><img src= "img/iconsprite.svg" alt="icon facebook"></a>
+					<a href="https://twitter.com/Fall4Chocolate" class="icon-sprite twitter buttons"><img src="img/iconsprite.svg" alt="icon twitter"></a>
+					</div>
+				</td>
+			   </tr>
+
+<tr>
+<td></td>
+<td>
+	<hr>
+<!--<div id="twolions-stamp">--><div id="twolions-stamp">
+			   		<p>Site Powered By</p>
+						<a href="http://www.twolionstechnologies.com" target="_blank"><img id="twolionslogo" src="img/twolions.png" alt="two lions technologies logo">
+						</a> </div>
+				<!--</div>-->
+</td>
+<td></td>
+</tr>
+
+				</table>
+			   
+		</div>
+			</footer>
+			
+			<!--end of Footer-->
+
+
+
+
+<!--Scripts-->
+						<script>
+								jQuery(document).ready(function($){
+									//open-close submenu on mobile
+									$('.cd-main-nav').on('click', function(event){
+										if($(event.target).is('.cd-main-nav')) $(this).children('ul').toggleClass('is-visible');
+									});
+								});
+								</script>
+								
+					
+						
+						
+			<!--end of Scripts-->
+
+
+
+
+	
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
