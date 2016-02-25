@@ -71,7 +71,7 @@ body::after {
 }
 
 a {
-  color: #f82f53;
+  /* color: #f82f53; */
   text-decoration: none;
 }
 
@@ -703,7 +703,7 @@ text-align: center;
 
 
 a {
-  color: #b4d7a8;
+  /* color: #b4d7a8; */
   text-decoration: none;
 }
 
